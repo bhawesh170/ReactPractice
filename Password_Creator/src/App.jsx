@@ -38,7 +38,7 @@ function App() {
           />
           <button onClick={() => {
             reference.current.select()
-            document.execCommand('copy')
+            navigator.clipboard.writeText(reference.current.value)
           }}>
             Copy
           </button>
